@@ -14,10 +14,39 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+	- (void)viewDidLoad
+	{
+		[super viewDidLoad];
+		
+		CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+		
+		locationManager.delegate = self;
+		
+		[locationManager startUpdatingLocation];
+		
+		[mapView setShowsUserLocation:YES];
+	}
+
+- (void)locationManager:(CLLocationManager *)manager
+	didUpdateToLocation:(CLLocation *)newLocation
+		   fromLocation:(CLLocation *)oldLocation
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	if (newLocation != oldLocation)
+	{
+        CLLocationCoordinate2D location; 
+		location.latitude = newLocation.coordinate.latitude;
+		location.longitude = newLocation.coordinate.longitude;
+		
+		MKCoordinateSpan span;
+        span.latitudeDelta = 0.005;
+        span.longitudeDelta = 0.005;
+		
+        MKCoordinateRegion region;
+        region.span = span;
+        region.center = location;
+		
+		[mapView setRegion:region animated:YES];
+	}
 }
 
 - (void)viewDidUnload

@@ -15,6 +15,8 @@
 		EAB51AB815A3E20600F8F7A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB51AB715A3E20600F8F7A1 /* AppDelegate.m */; };
 		EAB51ABB15A3E20600F8F7A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB51ABA15A3E20600F8F7A1 /* ViewController.m */; };
 		EAB51ABE15A3E20600F8F7A1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB51ABC15A3E20600F8F7A1 /* ViewController.xib */; };
+		EAB51AC515A3E47400F8F7A1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB51AC415A3E47400F8F7A1 /* CoreLocation.framework */; };
+		EAB51AC915A3E60A00F8F7A1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB51AC815A3E60A00F8F7A1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +24,17 @@
 		EAB51AA715A3E20600F8F7A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAB51AA915A3E20600F8F7A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EAB51AAB15A3E20600F8F7A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EAB51AAF15A3E20600F8F7A1 /* OndeEstou-Info.plist */ = {isa = PBXFileReference; path = "OndeEstou-Info.plist"; sourceTree = "<group>"; };
+		EAB51AAF15A3E20600F8F7A1 /* OndeEstou-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OndeEstou-Info.plist"; sourceTree = "<group>"; };
 		EAB51AB115A3E20600F8F7A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EAB51AB315A3E20600F8F7A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EAB51AB515A3E20600F8F7A1 /* OndeEstou-Prefix.pch */ = {isa = PBXFileReference; path = "OndeEstou-Prefix.pch"; sourceTree = "<group>"; };
-		EAB51AB615A3E20600F8F7A1 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAB51AB515A3E20600F8F7A1 /* OndeEstou-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OndeEstou-Prefix.pch"; sourceTree = "<group>"; };
+		EAB51AB615A3E20600F8F7A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAB51AB715A3E20600F8F7A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EAB51AB915A3E20600F8F7A1 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		EAB51AB915A3E20600F8F7A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EAB51ABA15A3E20600F8F7A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EAB51ABD15A3E20600F8F7A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		EAB51AC415A3E47400F8F7A1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EAB51AC815A3E60A00F8F7A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB51AC915A3E60A00F8F7A1 /* MapKit.framework in Frameworks */,
+				EAB51AC515A3E47400F8F7A1 /* CoreLocation.framework in Frameworks */,
 				EAB51AA815A3E20600F8F7A1 /* UIKit.framework in Frameworks */,
 				EAB51AAA15A3E20600F8F7A1 /* Foundation.framework in Frameworks */,
 				EAB51AAC15A3E20600F8F7A1 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +73,8 @@
 		EAB51AA615A3E20600F8F7A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAB51AC415A3E47400F8F7A1 /* CoreLocation.framework */,
+				EAB51AC815A3E60A00F8F7A1 /* MapKit.framework */,
 				EAB51AA715A3E20600F8F7A1 /* UIKit.framework */,
 				EAB51AA915A3E20600F8F7A1 /* Foundation.framework */,
 				EAB51AAB15A3E20600F8F7A1 /* CoreGraphics.framework */,
@@ -235,10 +243,12 @@
 		EAB51AC215A3E20600F8F7A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: M CARDOSO DA CUNHA (72426PSAPG)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OndeEstou/OndeEstou-Prefix.pch";
 				INFOPLIST_FILE = "OndeEstou/OndeEstou-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EDDFD001-7571-4DF0-AD4D-C4C5C9C8A7DF";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -246,10 +256,12 @@
 		EAB51AC315A3E20600F8F7A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: M CARDOSO DA CUNHA (72426PSAPG)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OndeEstou/OndeEstou-Prefix.pch";
 				INFOPLIST_FILE = "OndeEstou/OndeEstou-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EDDFD001-7571-4DF0-AD4D-C4C5C9C8A7DF";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
